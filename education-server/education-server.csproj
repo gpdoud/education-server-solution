@@ -7,8 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20190404122211_Init.cs" />
+    <Compile Remove="Migrations\20190404122211_Init.Designer.cs" />
+    <Compile Remove="Migrations\20190404122602_Init.cs" />
+    <Compile Remove="Migrations\20190404122602_Init.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="microsoft.aspnetcore.cors" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="microsoft.entityframeworkcore.proxies" Version="2.2.3" />
+    <PackageReference Include="microsoft.entityframeworkcore.sqlserver" Version="2.2.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
   </ItemGroup>
 
 </Project>
